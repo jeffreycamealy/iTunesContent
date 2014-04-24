@@ -10,9 +10,11 @@
 #import <AFNetworking.h>
 #import <ReactiveCocoa.h>
 #import "ServerConstants.h"
+#import "XMLReader.h"
 
 @interface Server () {
     AFHTTPRequestOperationManager *requestOperationManager;
+    NSMutableString *bufferString;
 }
 @end
 
@@ -24,6 +26,9 @@
 - (id)init {
     if (self = [super init]) {
         requestOperationManager = [AFHTTPRequestOperationManager manager];
+        AFXMLParserResponseSerializer *responseSerializer = [AFXMLParserResponseSerializer new];
+        responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/atom+xml", nil];
+        requestOperationManager.responseSerializer = responseSerializer;
     }
     return self;
 }
@@ -35,8 +40,9 @@
     RACSubject *subject = [RACSubject subject];
     [requestOperationManager GET:topTechPodcastsURL
                       parameters:nil
-                         success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                             [subject sendNext:responseObject];
+                         success:^(AFHTTPRequestOperation *operation, NSXMLParser *xmlParser) {
+                             NSDictionary *dict = [XMLReader dictionaryForXMLString:operation.responseString error:nil];
+                             dict = nil;
                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                              [subject sendError:error];
                          }];
@@ -44,3 +50,36 @@
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

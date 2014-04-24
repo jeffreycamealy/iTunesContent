@@ -20,6 +20,8 @@
 		0010E2841907510200C020AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0010E2821907510200C020AA /* InfoPlist.strings */; };
 		0010E2861907510200C020AA /* iTunesContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0010E2851907510200C020AA /* iTunesContentTests.m */; };
 		00E3541619089A1B00B6BB70 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541519089A1B00B6BB70 /* Server.m */; };
+		00E3541F19089F8D00B6BB70 /* PodcastsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */; };
+		00E354241908AC5900B6BB70 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354231908AC5900B6BB70 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0E221487C6084B4E87A3E80B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BB137AC9EF4F098CD7B7B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,10 @@
 		00E3541419089A1B00B6BB70 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Server.h; path = SourceCode/Server.h; sourceTree = "<group>"; };
 		00E3541519089A1B00B6BB70 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Server.m; path = SourceCode/Server.m; sourceTree = "<group>"; };
 		00E3541819089E2800B6BB70 /* ServerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ServerConstants.h; path = SourceCode/ServerConstants.h; sourceTree = "<group>"; };
+		00E3541D19089F8D00B6BB70 /* PodcastsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PodcastsListVC.h; path = SourceCode/PodcastsListVC.h; sourceTree = "<group>"; };
+		00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PodcastsListVC.m; path = SourceCode/PodcastsListVC.m; sourceTree = "<group>"; };
+		00E354221908AC5900B6BB70 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		00E354231908AC5900B6BB70 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		11BB137AC9EF4F098CD7B7B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = CocoaPods/Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,10 +123,9 @@
 		0010E2661907510200C020AA /* iTunesContent */ = {
 			isa = PBXGroup;
 			children = (
-				00E35413190899F800B6BB70 /* AppDelegate */,
-				0010E2721907510200C020AA /* Images.xcassets */,
+				00E354201908AC5900B6BB70 /* Utilities */,
+				00E3541919089F3900B6BB70 /* MVC */,
 				0010E2671907510200C020AA /* Supporting Files */,
-				00E3541719089A1C00B6BB70 /* Server */,
 			);
 			path = iTunesContent;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		0010E2671907510200C020AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0010E2721907510200C020AA /* Images.xcassets */,
 				0010E2681907510200C020AA /* iTunesContent-Info.plist */,
 				0010E2691907510200C020AA /* InfoPlist.strings */,
 				0010E26C1907510200C020AA /* main.m */,
@@ -171,6 +177,58 @@
 				00E3541519089A1B00B6BB70 /* Server.m */,
 			);
 			name = Server;
+			sourceTree = "<group>";
+		};
+		00E3541919089F3900B6BB70 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				00E3541C19089F4C00B6BB70 /* Controller */,
+				00E3541B19089F4900B6BB70 /* View */,
+				00E3541A19089F3E00B6BB70 /* Model */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		00E3541A19089F3E00B6BB70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00E3541B19089F4900B6BB70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00E3541D19089F8D00B6BB70 /* PodcastsListVC.h */,
+				00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00E3541C19089F4C00B6BB70 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00E35413190899F800B6BB70 /* AppDelegate */,
+				00E3541719089A1C00B6BB70 /* Server */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		00E354201908AC5900B6BB70 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				00E354211908AC5900B6BB70 /* XMLReader */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		00E354211908AC5900B6BB70 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				00E354221908AC5900B6BB70 /* XMLReader.h */,
+				00E354231908AC5900B6BB70 /* XMLReader.m */,
+			);
+			path = XMLReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +362,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0010E2711907510200C020AA /* AppDelegate.m in Sources */,
+				00E3541F19089F8D00B6BB70 /* PodcastsListVC.m in Sources */,
+				00E354241908AC5900B6BB70 /* XMLReader.m in Sources */,
 				00E3541619089A1B00B6BB70 /* Server.m in Sources */,
 				0010E26D1907510200C020AA /* main.m in Sources */,
 			);

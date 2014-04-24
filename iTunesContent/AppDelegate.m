@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PodcastsListVC.h"
 
 @implementation AppDelegate
 
@@ -22,7 +23,7 @@
 }
 
 - (void)setupRootVC {
-    
+    self.window.rootViewController = [PodcastsListVC new];
 }
 
 @end
