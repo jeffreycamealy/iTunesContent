@@ -19,6 +19,8 @@
 		0010E27C1907510200C020AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0010E2641907510200C020AA /* UIKit.framework */; };
 		0010E2841907510200C020AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0010E2821907510200C020AA /* InfoPlist.strings */; };
 		0010E2861907510200C020AA /* iTunesContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0010E2851907510200C020AA /* iTunesContentTests.m */; };
+		00E3541619089A1B00B6BB70 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541519089A1B00B6BB70 /* Server.m */; };
+		0E221487C6084B4E87A3E80B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BB137AC9EF4F098CD7B7B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,11 @@
 		0010E2811907510200C020AA /* iTunesContentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTunesContentTests-Info.plist"; sourceTree = "<group>"; };
 		0010E2831907510200C020AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0010E2851907510200C020AA /* iTunesContentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunesContentTests.m; sourceTree = "<group>"; };
+		00E3541419089A1B00B6BB70 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Server.h; path = SourceCode/Server.h; sourceTree = "<group>"; };
+		00E3541519089A1B00B6BB70 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Server.m; path = SourceCode/Server.m; sourceTree = "<group>"; };
+		00E3541819089E2800B6BB70 /* ServerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ServerConstants.h; path = SourceCode/ServerConstants.h; sourceTree = "<group>"; };
+		11BB137AC9EF4F098CD7B7B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = CocoaPods/Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 				0010E2631907510200C020AA /* CoreGraphics.framework in Frameworks */,
 				0010E2651907510200C020AA /* UIKit.framework in Frameworks */,
 				0010E2611907510200C020AA /* Foundation.framework in Frameworks */,
+				0E221487C6084B4E87A3E80B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 				0010E27F1907510200C020AA /* iTunesContentTests */,
 				0010E25F1907510200C020AA /* Frameworks */,
 				0010E25E1907510200C020AA /* Products */,
+				D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +109,7 @@
 				0010E2621907510200C020AA /* CoreGraphics.framework */,
 				0010E2641907510200C020AA /* UIKit.framework */,
 				0010E2791907510200C020AA /* XCTest.framework */,
+				11BB137AC9EF4F098CD7B7B9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,10 +117,10 @@
 		0010E2661907510200C020AA /* iTunesContent */ = {
 			isa = PBXGroup;
 			children = (
-				0010E26F1907510200C020AA /* AppDelegate.h */,
-				0010E2701907510200C020AA /* AppDelegate.m */,
+				00E35413190899F800B6BB70 /* AppDelegate */,
 				0010E2721907510200C020AA /* Images.xcassets */,
 				0010E2671907510200C020AA /* Supporting Files */,
+				00E3541719089A1C00B6BB70 /* Server */,
 			);
 			path = iTunesContent;
 			sourceTree = "<group>";
@@ -144,6 +154,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		00E35413190899F800B6BB70 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0010E26F1907510200C020AA /* AppDelegate.h */,
+				0010E2701907510200C020AA /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		00E3541719089A1C00B6BB70 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				00E3541819089E2800B6BB70 /* ServerConstants.h */,
+				00E3541419089A1B00B6BB70 /* Server.h */,
+				00E3541519089A1B00B6BB70 /* Server.m */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0010E2891907510200C020AA /* Build configuration list for PBXNativeTarget "iTunesContent" */;
 			buildPhases = (
+				A868A84B212D41F9A66F3900 /* Check Pods Manifest.lock */,
 				0010E2591907510200C020AA /* Sources */,
 				0010E25A1907510200C020AA /* Frameworks */,
 				0010E25B1907510200C020AA /* Resources */,
+				4EFAB578435B49F5867C7798 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,12 +265,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EFAB578435B49F5867C7798 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/CocoaPods/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A868A84B212D41F9A66F3900 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0010E2591907510200C020AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0010E2711907510200C020AA /* AppDelegate.m in Sources */,
+				00E3541619089A1B00B6BB70 /* Server.m in Sources */,
 				0010E26D1907510200C020AA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +419,7 @@
 		};
 		0010E28A1907510200C020AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -367,6 +433,7 @@
 		};
 		0010E28B1907510200C020AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -437,6 +504,7 @@
 				0010E28B1907510200C020AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0010E28C1907510200C020AA /* Build configuration list for PBXNativeTarget "iTunesContentTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +513,7 @@
 				0010E28E1907510200C020AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+xcodeproj '../iTunesContent.xcodeproj'
+
+pod 'AFNetworking', '2.2.3'
+pod 'ReactiveCocoa', '2.3'

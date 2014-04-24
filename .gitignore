@@ -1,0 +1,10 @@
+#
+# Xcode - Default .gitignore file
+#
+CocoaPods/Pods/*
+CocoaPods/Podfile.lock
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcworkspace/
+.DS_Store
+build/*
