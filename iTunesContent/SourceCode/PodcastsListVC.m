@@ -18,7 +18,7 @@
     UIDynamicAnimator *animator;
     UISnapBehavior *snapBehavior;
     UIAttachmentBehavior *attachmentBehavior;
-    Card *card;
+//    Card *card;
 }
 @end
 
@@ -33,14 +33,15 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self loadPodcasts];
-    [self addCard];
+    [self addCards];
     
     // Animator
     animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
     // Tap Recognizer
-    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
-    [self.view addGestureRecognizer:tapRecognizer];
+//    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+//    [self.view addGestureRecognizer:tapRecognizer];
+    srand(time(NULL));
 }
 
 
@@ -56,64 +57,65 @@
      }];
 }
 
-- (void)addCard {
-    card = [[Card alloc] initWithFrame:CGRectMake(10, 10, 200, 300)];
-    [self.view addSubview:card];
-    
-    // Pan Recognizer
-    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(cardPanned:)];
-    [card addGestureRecognizer:panRecognizer];
-    
-    // Swipe Recognizer
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(cardSwiped:)];
-    swipeRecognizer.direction = UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight;
-    [card addGestureRecognizer:swipeRecognizer];
+- (void)addCards {
+    for (int i = 0; i < 5; i++) {
+        Card *card = [[Card alloc] initWithFrame:CGRectMake(10, 10, 200, 300)];
+        [self.view addSubview:card];
+        
+        // Pan Recognizer
+        UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(cardPanned:)];
+        [card addGestureRecognizer:panRecognizer];
+    }
     
     
-    //----------------
-    UIOffset attachmentPoint = UIOffsetMake(-25.0, -25.0);
-    // By default, an attachment behavior uses the center of a view. By using a
-    // small offset, we get a more interesting effect which will cause the view
-    // to have rotation movement when dragging the attachment.
-    attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:card offsetFromCenter:attachmentPoint attachedToAnchor:CGPointMake(100, 100)];
-    [animator addBehavior:attachmentBehavior];
+//    
+//    
+//    //----------------
+//    UIOffset attachmentPoint = UIOffsetMake(-25.0, -25.0);
+//    // By default, an attachment behavior uses the center of a view. By using a
+//    // small offset, we get a more interesting effect which will cause the view
+//    // to have rotation movement when dragging the attachment.
+//    attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:card offsetFromCenter:attachmentPoint attachedToAnchor:CGPointMake(100, 100)];
+//    [animator addBehavior:attachmentBehavior];
 }
 
-- (void)viewTapped:(UITapGestureRecognizer *)tapRecognizer {
-    CGPoint point = [tapRecognizer locationInView:self.view];
-    
-    
-    card.transform = CGAffineTransformIdentity;
-    // Remove the previous behavior.
-    [animator removeBehavior:snapBehavior];
-    
-    snapBehavior = [[UISnapBehavior alloc] initWithItem:card snapToPoint:point];
-    __weak UIView *weakCard = card;
-    
-    const int maxVariance = 10;
-    int r = rand()%(maxVariance*2);
-    r -= maxVariance;
-    r = r ?: r+1; // Make sure it's not zero;
-    snapBehavior.action = ^{
-        NSLog(@"%i", r);
-        weakCard.transform = CGAffineTransformRotate(weakCard.transform, M_PI/100.0/(float)r);
-    };
-    [animator addBehavior:snapBehavior];
-    
-}
+//- (void)viewTapped:(UITapGestureRecognizer *)tapRecognizer {
+//    CGPoint point = [tapRecognizer locationInView:self.view];
+//    
+//    
+//    card.transform = CGAffineTransformIdentity;
+//    // Remove the previous behavior.
+//    [animator removeBehavior:snapBehavior];
+//    
+//    snapBehavior = [[UISnapBehavior alloc] initWithItem:card snapToPoint:point];
+//    __weak UIView *weakCard = card;
+//    
+//    const int maxVariance = 10;
+//    int r = rand()%(maxVariance*2);
+//    r -= maxVariance;
+//    r = r ?: r+1; // Make sure it's not zero;
+//    snapBehavior.action = ^{
+//        NSLog(@"%i", r);
+//        weakCard.transform = CGAffineTransformRotate(weakCard.transform, M_PI/100.0/(float)r);
+//    };
+//    [animator addBehavior:snapBehavior];
+//    
+//}
 
 
 #pragma mark - Gesture Recognizer
 
 - (void)cardPanned:(UIPanGestureRecognizer *)panRecognizer {
+    Card *card = (Card *)panRecognizer.view;
+    
     switch (panRecognizer.state) {
         case UIGestureRecognizerStateBegan: {
-            CGPoint touchPoint = [panRecognizer locationInView:panRecognizer.view];
-            UIOffset cardOffset = UIOffsetMake(touchPoint.x - panRecognizer.view.bounds.size.width/2.0,
-                                               touchPoint.y - panRecognizer.view.bounds.size.height/2.0);
+            CGPoint touchPoint = [panRecognizer locationInView:card];
+            UIOffset cardOffset = UIOffsetMake(touchPoint.x - card.bounds.size.width/2.0,
+                                               touchPoint.y - card.bounds.size.height/2.0);
             CGPoint anchor = [panRecognizer locationInView:self.view];
             
-            attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:panRecognizer.view
+            attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:card
                                                            offsetFromCenter:cardOffset
                                                            attachedToAnchor:anchor];
             
@@ -127,7 +129,7 @@
             
         case UIGestureRecognizerStateEnded: {
             [animator removeBehavior:attachmentBehavior];
-            [self snapToPoint];
+            [self snapCard:card];
         } break;
             
         default:
@@ -135,25 +137,49 @@
     }
 }
 
-- (void)snapToPoint {
-    CGPoint point = CGPointMake(10, 586/2);
+- (void)snapCard:(Card *)card {
+    CGPoint rootLeftPoint = CGPointMake(10, 586/2);
+    CGPoint pointOffset = [self randomOffset];
+    CGPoint modifiedLeftPoint = CGPointMake(rootLeftPoint.x+pointOffset.x,
+                                            rootLeftPoint.y+pointOffset.y);
     
     card.transform = CGAffineTransformIdentity;
     // Remove the previous behavior.
     [animator removeBehavior:snapBehavior];
     
-    snapBehavior = [[UISnapBehavior alloc] initWithItem:card snapToPoint:point];
+    snapBehavior = [[UISnapBehavior alloc] initWithItem:card snapToPoint:modifiedLeftPoint];
     __weak UIView *weakCard = card;
     
-    const int maxVariance = 10;
-    int r = rand()%(maxVariance*2);
-    r -= maxVariance;
-    r = r ?: r+1; // Make sure it's not zero;
+    float r = [self randomRotation];
     snapBehavior.action = ^{
-        NSLog(@"%i", r);
-        weakCard.transform = CGAffineTransformRotate(weakCard.transform, M_PI/100.0/(float)r);
+        weakCard.transform = CGAffineTransformRotate(weakCard.transform, r);
     };
     [animator addBehavior:snapBehavior];
+}
+
+#pragma mark - Random Generators
+
+const int numberOfRandomAngles = 10;
+
+- (float)randomRotation {
+    float r = [self randPlusOrMinusUpTo:numberOfRandomAngles];
+    float rotation = M_PI/100.0/r;
+    
+    return rotation;
+}
+
+const int maxPointOffset = 10;
+
+- (CGPoint)randomOffset {
+    return CGPointMake([self randPlusOrMinusUpTo:maxPointOffset],
+                       [self randPlusOrMinusUpTo:maxPointOffset]);
+}
+
+- (float)randPlusOrMinusUpTo:(int)n {
+    int x = rand()%(n*2);
+    x -= n;
+    x = x ?: x+1; // Make sure it's not zero
+    return x;
 }
 
 - (void)cardPannedd:(UIPanGestureRecognizer *)gesture

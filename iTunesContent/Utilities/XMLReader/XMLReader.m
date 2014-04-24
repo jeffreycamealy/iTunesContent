@@ -9,7 +9,7 @@
 
 NSString *const kXMLReaderTextNodeKey = @"text";
 
-@interface XMLReader (Internal)
+@interface XMLReader (Internal) <NSXMLParserDelegate>
 
 - (id)initWithError:(NSError **)error;
 - (NSDictionary *)objectWithData:(NSData *)data;

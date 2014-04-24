@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.layer.cornerRadius = 5;
-        self.layer.shadowColor = [UIColor colorWithWhite:0 alpha:0.85].CGColor;
+        self.layer.shadowColor = [UIColor colorWithWhite:0 alpha:0.70].CGColor;
         self.layer.shadowOffset = CGSizeMake(2, 3);
         self.layer.shadowRadius = 3;
         self.layer.shadowOpacity = 1;
