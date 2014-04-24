@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<feed xmlns:im="http://itunes.apple.com/rss" xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+		<id>https://itunes.apple.com/us/rss/toppodcasts/limit=5/genre=1318/explicit=true/xml</id><title>iTunes Store: Top Podcasts in Technology</title><updated>2014-04-23T18:56:34-07:00</updated><link rel="alternate" type="text/html" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=us&amp;id=21364&amp;popId=3"/><link rel="self" href="https://itunes.apple.com/us/rss/toppodcasts/limit=5/genre=1318/explicit=true/xml"/><icon>http://itunes.apple.com/favicon.ico</icon><author><name>iTunes Store</name><uri>http://www.apple.com/itunes/</uri></author><rights>Copyright 2008 Apple Inc.</rights>
+		
+			<entry>
+				<updated>2014-04-23T18:56:34-07:00</updated>
+				
+					<id im:id="523121474">https://itunes.apple.com/us/podcast/npr-ted-radio-hour-podcast/id523121474?mt=2&amp;uo=2</id>
+				
+					<title>NPR: TED Radio Hour Podcast - NPR</title>
+				
+					<summary>The TED Radio Hour is a journey through fascinating ideas: astonishing inventions, fresh approaches to old problems, new ways to think and create. Based on Talks given by riveting speakers on the world-renowned TED stage, each show is centered on a common theme - such as the source of happiness, crowd-sourcing innovation, power shifts, or inexplicable connections. The TED Radio Hour is hosted by Guy Raz, and is a co-production of NPR &amp; TED. Follow the show @TEDRadioHour.</summary>
+				
+					<im:name>NPR: TED Radio Hour Podcast</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://itunes.apple.com/us/podcast/npr-ted-radio-hour-podcast/id523121474?mt=2&amp;uo=2"/>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<category im:id="1318" term="Technology" scheme="https://itunes.apple.com/us/genre/podcasts-technology/id1318?mt=2&amp;uo=2" label="Technology"/>
+				
+					<im:artist href="https://itunes.apple.com/us/artist/npr/id125443881?mt=2&amp;uo=2">NPR</im:artist>
+				
+					<im:price amount="0" currency="USD">Free</im:price>
+				
+					<im:image height="55">http://a1717.phobos.apple.com/us/r30/Podcasts/v4/de/b7/d4/deb7d4ff-e978-6d9c-35a1-81c3b2ba875f/mza_3581846433534047502.55x55-70.jpg</im:image>
+				
+					<im:image height="60">http://a791.phobos.apple.com/us/r30/Podcasts/v4/de/b7/d4/deb7d4ff-e978-6d9c-35a1-81c3b2ba875f/mza_3581846433534047502.60x60-50.jpg</im:image>
+				
+					<im:image height="170">http://a1942.phobos.apple.com/us/r30/Podcasts/v4/de/b7/d4/deb7d4ff-e978-6d9c-35a1-81c3b2ba875f/mza_3581846433534047502.170x170-75.jpg</im:image>
+				
+					<rights>&#169; Copyright:  Copyright 2012 NPR - For Personal Use Only</rights>
+				
+					<im:releaseDate label="April 17, 2014">2014-04-17T21:43:00-07:00</im:releaseDate>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://itunes.apple.com/us/podcast/npr-ted-radio-hour-podcast/id523121474?mt=2&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;NPR - NPR: TED Radio Hour Podcast artwork&quot; src=&quot;http://a1942.phobos.apple.com/us/r30/Podcasts/v4/de/b7/d4/deb7d4ff-e978-6d9c-35a1-81c3b2ba875f/mza_3581846433534047502.170x170-75.jpg&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;https://s.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/npr-ted-radio-hour-podcast/id523121474?mt=2&amp;uo=2&quot;&gt;NPR: TED Radio Hour Podcast&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        &lt;a href=&quot;https://itunes.apple.com/us/artist/npr/id125443881?mt=2&amp;amp;uo=2&quot;&gt;NPR&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/podcasts-technology/id1318?mt=2&amp;uo=2&quot;&gt;Technology&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; April 17, 2014
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;The TED Radio Hour is a journey through fascinating ideas: astonishing inventions, fresh approaches to old problems, new ways to think and create. Based on Talks given by riveting speakers on the world-renowned TED stage, each show is centered on a common theme - such as the source of happiness, crowd-sourcing innovation, power shifts, or inexplicable connections. The TED Radio Hour is hosted by Guy Raz, and is a co-production of NPR &amp;amp; TED. Follow the show @TEDRadioHour.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; © Copyright:  Copyright 2012 NPR - For Personal Use Only&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2014-04-23T18:56:34-07:00</updated>
+				
+					<id im:id="74942331">https://itunes.apple.com/us/podcast/apple-quarterly-earnings-call/id74942331?mt=2&amp;uo=2</id>
+				
+					<title>Apple Quarterly Earnings Call - Apple Inc.</title>
+				
+					<summary>Audio replays of conference calls discussing Apple (AAPL) quarterly financial results. Please note that some of the comments in Apple&#39;s quarterly earnings conference calls consist of forward looking statements that are subject to risks, and actual results may differ from the Company&#39;s forecasts. For more information please refer to the risk factors described in Apple&#39;s most recent Forms 10-K and 10-Q. Apple assumes no obligation to update any forward-looking statements or information, which speak as of their respective dates. These calls are typically posted within 24 hours of the earnings announcement, and they generally remain available for two weeks following the announcement. By subscribing to this podcast, you will automatically receive the next Apple earnings call recording when it is posted.</summary>
+				
+					<im:name>Apple Quarterly Earnings Call</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://itunes.apple.com/us/podcast/apple-quarterly-earnings-call/id74942331?mt=2&amp;uo=2"/>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<category im:id="1448" term="Tech News" scheme="https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2" label="Tech News"/>
+				
+					<im:artist href="https://itunes.apple.com/us/artist/apple/id706424103?mt=2&amp;uo=2">Apple Inc.</im:artist>
+				
+					<im:price amount="0" currency="USD">Free</im:price>
+				
+					<im:image height="55">http://a661.phobos.apple.com/us/r30/Features6/v4/5b/ca/70/5bca7052-d24d-0305-5060-45824ebfedd2/mza_3903951298772115470.55x55-70.jpg</im:image>
+				
+					<im:image height="60">http://a1383.phobos.apple.com/us/r30/Features6/v4/5b/ca/70/5bca7052-d24d-0305-5060-45824ebfedd2/mza_3903951298772115470.60x60-50.jpg</im:image>
+				
+					<im:image height="170">http://a598.phobos.apple.com/us/r30/Features6/v4/5b/ca/70/5bca7052-d24d-0305-5060-45824ebfedd2/mza_3903951298772115470.170x170-75.jpg</im:image>
+				
+					<rights>Copyright &#169; 2008 Apple Inc.</rights>
+				
+					<im:releaseDate label="April 23, 2014">2014-04-23T12:00:00-07:00</im:releaseDate>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://itunes.apple.com/us/podcast/apple-quarterly-earnings-call/id74942331?mt=2&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Apple Inc. - Apple Quarterly Earnings Call artwork&quot; src=&quot;http://a598.phobos.apple.com/us/r30/Features6/v4/5b/ca/70/5bca7052-d24d-0305-5060-45824ebfedd2/mza_3903951298772115470.170x170-75.jpg&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;https://s.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/apple-quarterly-earnings-call/id74942331?mt=2&amp;uo=2&quot;&gt;Apple Quarterly Earnings Call&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        &lt;a href=&quot;https://itunes.apple.com/us/artist/apple/id706424103?mt=2&amp;amp;uo=2&quot;&gt;Apple Inc.&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2&quot;&gt;Tech News&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; April 23, 2014
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Audio replays of conference calls discussing Apple (AAPL) quarterly financial results. Please note that some of the comments in Apple&amp;#39;s quarterly earnings conference calls consist of forward looking statements that are subject to risks, and actual results may differ from the Company&amp;#39;s forecasts. For more information please refer to the risk factors described in Apple&amp;#39;s most recent Forms 10-K and 10-Q. Apple assumes no obligation to update any forward-looking statements or information, which speak as of their respective dates. These calls are typically posted within 24 hours of the earnings announcement, and they generally remain available for two weeks following the announcement. By subscribing to this podcast, you will automatically receive the next Apple earnings call recording when it is posted.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; Copyright © 2008 Apple Inc.&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2014-04-23T18:56:34-07:00</updated>
+				
+					<id im:id="294367636">https://itunes.apple.com/us/podcast/apple-byte-hd/id294367636?mt=2&amp;uo=2</id>
+				
+					<title>Apple Byte (HD) - CNETTV.com</title>
+				
+					<summary>The Apple Byte covers the fact, the fiction, and everything inside the world of Apple. Brian Tong talks about the latest Apple announcements, the rumors, and he&#39;ll break down the good and bad of Apple with an edgy style.</summary>
+				
+					<im:name>Apple Byte (HD)</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://itunes.apple.com/us/podcast/apple-byte-hd/id294367636?mt=2&amp;uo=2"/>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<category im:id="1448" term="Tech News" scheme="https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2" label="Tech News"/>
+				
+					<im:artist href="https://itunes.apple.com/us/artist/cnet.com/id135082710?mt=2&amp;uo=2">CNETTV.com</im:artist>
+				
+					<im:price amount="0" currency="USD">Free</im:price>
+				
+					<im:image height="55">http://a1575.phobos.apple.com/us/r30/Podcasts6/v4/eb/2f/0e/eb2f0e6d-1f25-6165-9dfd-f4a5bd0f94d0/mza_3023036333075165837.55x55-70.jpg</im:image>
+				
+					<im:image height="60">http://a649.phobos.apple.com/us/r30/Podcasts6/v4/eb/2f/0e/eb2f0e6d-1f25-6165-9dfd-f4a5bd0f94d0/mza_3023036333075165837.60x60-50.jpg</im:image>
+				
+					<im:image height="170">http://a184.phobos.apple.com/us/r30/Podcasts6/v4/eb/2f/0e/eb2f0e6d-1f25-6165-9dfd-f4a5bd0f94d0/mza_3023036333075165837.170x170-75.jpg</im:image>
+				
+					<rights>&#169; 2014 CNET.com</rights>
+				
+					<im:releaseDate label="April 10, 2014">2014-04-10T23:32:00-07:00</im:releaseDate>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://itunes.apple.com/us/podcast/apple-byte-hd/id294367636?mt=2&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;CNETTV.com - Apple Byte (HD) artwork&quot; src=&quot;http://a184.phobos.apple.com/us/r30/Podcasts6/v4/eb/2f/0e/eb2f0e6d-1f25-6165-9dfd-f4a5bd0f94d0/mza_3023036333075165837.170x170-75.jpg&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;https://s.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/apple-byte-hd/id294367636?mt=2&amp;uo=2&quot;&gt;Apple Byte (HD)&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        &lt;a href=&quot;https://itunes.apple.com/us/artist/cnet.com/id135082710?mt=2&amp;amp;uo=2&quot;&gt;CNETTV.com&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2&quot;&gt;Tech News&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; April 10, 2014
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;The Apple Byte covers the fact, the fiction, and everything inside the world of Apple. Brian Tong talks about the latest Apple announcements, the rumors, and he&amp;#39;ll break down the good and bad of Apple with an edgy style.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; © 2014 CNET.com&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2014-04-23T18:56:34-07:00</updated>
+				
+					<id im:id="863802905">https://itunes.apple.com/us/podcast/stratechery/id863802905?mt=2&amp;uo=2</id>
+				
+					<title>Stratechery - Stratechery</title>
+				
+					<summary>Stratechery.FM is the official podcast of Stratechery.com, focused on the strategy and business of technology.
+
+Stratechery.FM is hosted by Ben Thompson, the author and founder of Stratechery.com, and Jon Nathanson, a writer for Slate.com. Episodes are recorded weekly and focus on understanding the strategy and business implications of the news of the day, as well as the deeper trends at work in technology.</summary>
+				
+					<im:name>Stratechery</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://itunes.apple.com/us/podcast/stratechery/id863802905?mt=2&amp;uo=2"/>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<category im:id="1448" term="Tech News" scheme="https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2" label="Tech News"/>
+				
+					<im:artist>Stratechery</im:artist>
+				
+					<im:price amount="0" currency="USD">Free</im:price>
+				
+					<im:image height="55">http://a478.phobos.apple.com/us/r30/Podcasts6/v4/22/5a/1b/225a1b75-792f-e765-9304-84a62d581327/mza_5203412891968464975.55x55-70.jpg</im:image>
+				
+					<im:image height="60">http://a1200.phobos.apple.com/us/r30/Podcasts6/v4/22/5a/1b/225a1b75-792f-e765-9304-84a62d581327/mza_5203412891968464975.60x60-50.jpg</im:image>
+				
+					<im:image height="170">http://a1455.phobos.apple.com/us/r30/Podcasts6/v4/22/5a/1b/225a1b75-792f-e765-9304-84a62d581327/mza_5203412891968464975.170x170-75.jpg</im:image>
+				
+					<im:releaseDate label="April 23, 2014">2014-04-23T08:49:00-07:00</im:releaseDate>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://itunes.apple.com/us/podcast/stratechery/id863802905?mt=2&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Stratechery - Stratechery artwork&quot; src=&quot;http://a1455.phobos.apple.com/us/r30/Podcasts6/v4/22/5a/1b/225a1b75-792f-e765-9304-84a62d581327/mza_5203412891968464975.170x170-75.jpg&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;https://s.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/stratechery/id863802905?mt=2&amp;uo=2&quot;&gt;Stratechery&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        Stratechery
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2&quot;&gt;Tech News&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; April 23, 2014
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Stratechery.FM is the official podcast of Stratechery.com, focused on the strategy and business of technology.&lt;br/&gt;&lt;br/&gt;Stratechery.FM is hosted by Ben Thompson, the author and founder of Stratechery.com, and Jon Nathanson, a writer for Slate.com. Episodes are recorded weekly and focus on understanding the strategy and business implications of the news of the day, as well as the deeper trends at work in technology.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2014-04-23T18:56:34-07:00</updated>
+				
+					<id im:id="73329404">https://itunes.apple.com/us/podcast/this-week-in-tech-mp3/id73329404?mt=2&amp;uo=2</id>
+				
+					<title>This Week in Tech (MP3) - TWiT</title>
+				
+					<summary>Your first podcast of the week is the last word in tech. Join Leo Laporte, Patrick Norton, Kevin Rose, John C. Dvorak, and other tech luminaries in a roundtable discussion of the latest trends in digital technology. Winner of the 2005 People&#39;s Choice Podcast Award for best overall podcast and Best Technology Podcast. Released every Sunday by midnight Pacific.</summary>
+				
+					<im:name>This Week in Tech (MP3)</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://itunes.apple.com/us/podcast/this-week-in-tech-mp3/id73329404?mt=2&amp;uo=2"/>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<category im:id="1448" term="Tech News" scheme="https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2" label="Tech News"/>
+				
+					<im:artist href="https://itunes.apple.com/us/artist/twit-tv/id146041210?mt=2&amp;uo=2">TWiT</im:artist>
+				
+					<im:price amount="0" currency="USD">Free</im:price>
+				
+					<im:image height="55">http://a1490.phobos.apple.com/us/r30/Podcasts6/v4/b8/5c/a1/b85ca1da-c8e0-d803-e163-494a04fcb399/mza_325991313626420305.55x55-70.jpg</im:image>
+				
+					<im:image height="60">http://a564.phobos.apple.com/us/r30/Podcasts6/v4/b8/5c/a1/b85ca1da-c8e0-d803-e163-494a04fcb399/mza_325991313626420305.60x60-50.jpg</im:image>
+				
+					<im:image height="170">http://a115.phobos.apple.com/us/r30/Podcasts6/v4/b8/5c/a1/b85ca1da-c8e0-d803-e163-494a04fcb399/mza_325991313626420305.170x170-75.jpg</im:image>
+				
+					<rights>&#169; This work is licensed under a Creative Commons License - Attribution-NonCommercial-ShareAlike - http://creativecommons.org/licenses/by-nc-sa/3.0/</rights>
+				
+					<im:releaseDate label="April 20, 2014">2014-04-20T19:43:00-07:00</im:releaseDate>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://itunes.apple.com/us/podcast/this-week-in-tech-mp3/id73329404?mt=2&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;TWiT - This Week in Tech (MP3) artwork&quot; src=&quot;http://a115.phobos.apple.com/us/r30/Podcasts6/v4/b8/5c/a1/b85ca1da-c8e0-d803-e163-494a04fcb399/mza_325991313626420305.170x170-75.jpg&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;https://s.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/this-week-in-tech-mp3/id73329404?mt=2&amp;uo=2&quot;&gt;This Week in Tech (MP3)&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        &lt;a href=&quot;https://itunes.apple.com/us/artist/twit-tv/id146041210?mt=2&amp;amp;uo=2&quot;&gt;TWiT&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/podcasts-technology-tech-news/id1448?mt=2&amp;uo=2&quot;&gt;Tech News&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; April 20, 2014
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Your first podcast of the week is the last word in tech. Join Leo Laporte, Patrick Norton, Kevin Rose, John C. Dvorak, and other tech luminaries in a roundtable discussion of the latest trends in digital technology. Winner of the 2005 People&amp;#39;s Choice Podcast Award for best overall podcast and Best Technology Podcast. Released every Sunday by midnight Pacific.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; © This work is licensed under a Creative Commons License - Attribution-NonCommercial-ShareAlike - http://creativecommons.org/licenses/by-nc-sa/3.0/&lt;/font&gt;
+	        
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+	</feed>

@@ -3,3 +3,4 @@ xcodeproj '../iTunesContent.xcodeproj'
 
 pod 'AFNetworking', '2.2.3'
 pod 'ReactiveCocoa', '2.3'
+pod 'Mantle', '1.4.1'

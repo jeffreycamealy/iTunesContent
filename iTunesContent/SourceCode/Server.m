@@ -11,6 +11,7 @@
 #import <ReactiveCocoa.h>
 #import "ServerConstants.h"
 #import "XMLReader.h"
+#import "Podcast.h"
 
 @interface Server () {
     AFHTTPRequestOperationManager *requestOperationManager;
@@ -36,21 +37,56 @@
 
 #pragma mark - Public API
 
+//- (RACSignal *)getTopPodcasts {
+//    RACSubject *subject = [RACSubject subject];
+//    [requestOperationManager GET:topTechPodcastsURL
+//                      parameters:nil
+//                         success:^(AFHTTPRequestOperation *operation, NSXMLParser *xmlParser) {
+//                             NSDictionary *dict = [XMLReader dictionaryForXMLString:operation.responseString error:nil];
+//                             NSArray *podcasts = [self parseDict:dict];
+//                             [subject sendNext:podcasts];
+//                         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//                             [subject sendError:error];
+//                         }];
+//    return subject;
+//}
+
 - (RACSignal *)getTopPodcasts {
     RACSubject *subject = [RACSubject subject];
-    [requestOperationManager GET:topTechPodcastsURL
-                      parameters:nil
-                         success:^(AFHTTPRequestOperation *operation, NSXMLParser *xmlParser) {
-                             NSDictionary *dict = [XMLReader dictionaryForXMLString:operation.responseString error:nil];
-                             dict = nil;
-                         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                             [subject sendError:error];
-                         }];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SampleResponse" ofType:@"txt"];
+    NSString *string = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *dict = [XMLReader dictionaryForXMLString:string error:nil];
+    NSArray *podcasts = [self parseDict:dict];
+    
+    dispatch_after(0, dispatch_get_main_queue(), ^{
+        [subject sendNext:podcasts];
+    });
+    
     return subject;
 }
 
-@end
+// TODO: Extract strings to a constants file
+- (NSArray *)parseDict:(NSDictionary *)dict {
+    NSArray *podcastDicts = dict[@"feed"][@"entry"];
+    NSMutableArray *podcasts = [NSMutableArray new];
+    for (NSDictionary *podcastDict in podcastDicts) {
+        Podcast *podcast = [Podcast new];
+        [podcasts addObject:podcast];
+        
+        podcast.imagePath = [self cleanString:podcastDict[@"im:image"][2][@"text"]];
+        podcast.itunesPath = [self cleanString:podcastDict[@"id"][@"text"]];
+        podcast.title = [self cleanString:podcastDict[@"title"][@"text"]];
+    }
+    
+    return podcasts;
+}
 
+- (NSString *)cleanString:(NSString *)string {
+    return [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+@end
 
 
 

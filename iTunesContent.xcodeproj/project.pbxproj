@@ -22,6 +22,10 @@
 		00E3541619089A1B00B6BB70 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541519089A1B00B6BB70 /* Server.m */; };
 		00E3541F19089F8D00B6BB70 /* PodcastsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */; };
 		00E354241908AC5900B6BB70 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354231908AC5900B6BB70 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		00E354271908C43900B6BB70 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354261908C43900B6BB70 /* Entry.m */; };
+		00E3542A1908C71500B6BB70 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354291908C71500B6BB70 /* Podcast.m */; };
+		00E3542C1908C9C100B6BB70 /* SampleResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00E3542B1908C9C100B6BB70 /* SampleResponse.txt */; };
+		00E354301909658E00B6BB70 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3542F1909658E00B6BB70 /* Card.m */; };
 		0E221487C6084B4E87A3E80B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BB137AC9EF4F098CD7B7B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,13 @@
 		00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PodcastsListVC.m; path = SourceCode/PodcastsListVC.m; sourceTree = "<group>"; };
 		00E354221908AC5900B6BB70 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		00E354231908AC5900B6BB70 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		00E354251908C43900B6BB70 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entry.h; path = SourceCode/Entry.h; sourceTree = "<group>"; };
+		00E354261908C43900B6BB70 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entry.m; path = SourceCode/Entry.m; sourceTree = "<group>"; };
+		00E354281908C71500B6BB70 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Podcast.h; path = SourceCode/Podcast.h; sourceTree = "<group>"; };
+		00E354291908C71500B6BB70 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Podcast.m; path = SourceCode/Podcast.m; sourceTree = "<group>"; };
+		00E3542B1908C9C100B6BB70 /* SampleResponse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SampleResponse.txt; sourceTree = "<group>"; };
+		00E3542E1909658E00B6BB70 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = SourceCode/Card.h; sourceTree = "<group>"; };
+		00E3542F1909658E00B6BB70 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = SourceCode/Card.m; sourceTree = "<group>"; };
 		11BB137AC9EF4F098CD7B7B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = CocoaPods/Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +134,7 @@
 		0010E2661907510200C020AA /* iTunesContent */ = {
 			isa = PBXGroup;
 			children = (
+				00E3542D1908CD9100B6BB70 /* Resources */,
 				00E354201908AC5900B6BB70 /* Utilities */,
 				00E3541919089F3900B6BB70 /* MVC */,
 				0010E2671907510200C020AA /* Supporting Files */,
@@ -182,9 +194,9 @@
 		00E3541919089F3900B6BB70 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				00E3541A19089F3E00B6BB70 /* Model */,
 				00E3541C19089F4C00B6BB70 /* Controller */,
 				00E3541B19089F4900B6BB70 /* View */,
-				00E3541A19089F3E00B6BB70 /* Model */,
 			);
 			name = MVC;
 			sourceTree = "<group>";
@@ -192,6 +204,10 @@
 		00E3541A19089F3E00B6BB70 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00E354251908C43900B6BB70 /* Entry.h */,
+				00E354261908C43900B6BB70 /* Entry.m */,
+				00E354281908C71500B6BB70 /* Podcast.h */,
+				00E354291908C71500B6BB70 /* Podcast.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -199,8 +215,8 @@
 		00E3541B19089F4900B6BB70 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				00E3541D19089F8D00B6BB70 /* PodcastsListVC.h */,
-				00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */,
+				00E35431190965AA00B6BB70 /* PodcastListVC */,
+				00E35432190965B100B6BB70 /* Card */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -229,6 +245,32 @@
 				00E354231908AC5900B6BB70 /* XMLReader.m */,
 			);
 			path = XMLReader;
+			sourceTree = "<group>";
+		};
+		00E3542D1908CD9100B6BB70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00E3542B1908C9C100B6BB70 /* SampleResponse.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		00E35431190965AA00B6BB70 /* PodcastListVC */ = {
+			isa = PBXGroup;
+			children = (
+				00E3541D19089F8D00B6BB70 /* PodcastsListVC.h */,
+				00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */,
+			);
+			name = PodcastListVC;
+			sourceTree = "<group>";
+		};
+		00E35432190965B100B6BB70 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				00E3542E1909658E00B6BB70 /* Card.h */,
+				00E3542F1909658E00B6BB70 /* Card.m */,
+			);
+			name = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0010E26B1907510200C020AA /* InfoPlist.strings in Resources */,
+				00E3542C1908C9C100B6BB70 /* SampleResponse.txt in Resources */,
 				0010E2731907510200C020AA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +404,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E354271908C43900B6BB70 /* Entry.m in Sources */,
 				0010E2711907510200C020AA /* AppDelegate.m in Sources */,
+				00E3542A1908C71500B6BB70 /* Podcast.m in Sources */,
+				00E354301909658E00B6BB70 /* Card.m in Sources */,
 				00E3541F19089F8D00B6BB70 /* PodcastsListVC.m in Sources */,
 				00E354241908AC5900B6BB70 /* XMLReader.m in Sources */,
 				00E3541619089A1B00B6BB70 /* Server.m in Sources */,
@@ -483,10 +529,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Kelly (Y88UQCXZ38)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesContent/iTunesContent-Prefix.pch";
 				INFOPLIST_FILE = "iTunesContent/iTunesContent-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B97AB86C-6312-497C-9EED-438E5F5DA446";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -497,10 +545,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Kelly (Y88UQCXZ38)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesContent/iTunesContent-Prefix.pch";
 				INFOPLIST_FILE = "iTunesContent/iTunesContent-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B97AB86C-6312-497C-9EED-438E5F5DA446";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
