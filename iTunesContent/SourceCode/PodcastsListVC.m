@@ -59,7 +59,10 @@
 - (void)addCards {
     for (int i = 0; i < 10; i++) {
         Card *card = [[Card alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
-        card.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+        CGPoint rootPoint = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+        CGPoint randomOffset = [self randomOffset];
+        card.center = CGPointMake(rootPoint.x+randomOffset.x, rootPoint.y+randomOffset.y);
+        card.transform = CGAffineTransformMakeRotation([self randomRotation]);
         [self.view addSubview:card];
         
         // Pan Recognizer
@@ -74,6 +77,7 @@
 
 - (void)cardPanned:(UIPanGestureRecognizer *)panRecognizer {
     Card *card = (Card *)panRecognizer.view;
+    [self.view bringSubviewToFront:card];
     
     switch (panRecognizer.state) {
         case UIGestureRecognizerStateBegan: {

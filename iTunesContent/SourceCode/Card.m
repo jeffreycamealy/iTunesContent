@@ -14,12 +14,23 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.layer.cornerRadius = 5;
-        self.layer.shadowColor = [UIColor colorWithWhite:0 alpha:0.70].CGColor;
+        // Card Back
+        self.layer.cornerRadius = 7;
+        self.layer.shadowColor = [UIColor colorWithWhite:0.3 alpha:1].CGColor;
         self.layer.shadowOffset = CGSizeMake(2, 3);
         self.layer.shadowRadius = 3;
         self.layer.shadowOpacity = 1;
-        self.backgroundColor = [UIColor grayColor];
+        self.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1];
+        
+        
+        // Card Color
+        const float edgeInset = 7;
+        CGRect cardColorRect = CGRectMake(edgeInset, edgeInset,
+                                          self.bounds.size.width-edgeInset*2, self.bounds.size.height-edgeInset*2);
+        UIView *cardColor = [[UIView alloc] initWithFrame:cardColorRect];
+        cardColor.backgroundColor = [UIColor grayColor];
+        cardColor.layer.cornerRadius = 8;
+        [self addSubview:cardColor];
     }
     return self;
 }
