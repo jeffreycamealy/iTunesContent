@@ -12,6 +12,7 @@
 
 @interface Card () {
     Podcast *podcast;
+    UILabel *titleLabel;
 }
 @end
 
@@ -33,6 +34,7 @@
     podcast = aPodcast;
     [self addImage];
     [self addTitle];
+    [self addAuthor];
 }
 
 
@@ -70,6 +72,19 @@ const float frameWidth = 3;
     label.text = podcast.title;
     [label sizeToFit];
     [self addSubview:label];
+    titleLabel = label;
+}
+
+- (void)addAuthor {
+    UILabel *authorLabel = [[UILabel alloc] initWithFrame:CGRectMake(titleLabel.frame.origin.x,
+                                                                    titleLabel.frame.origin.y+titleLabel.frame.size.height,
+                                                                     titleLabel.frame.size.width,
+                                                                     100)];
+    [self addSubview:authorLabel];
+    authorLabel.text = podcast.author;
+    authorLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Regular" size:12];
+    authorLabel.numberOfLines = 0;
+    [authorLabel sizeToFit];
 }
 
 @end
