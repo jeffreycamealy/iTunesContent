@@ -17,13 +17,15 @@
 @end
 
 
+// **Note: Layout is done manually and with many magic numbers.  In a natural process with more time, this class would be
+//         refactored to use autolayout and have all measurments as constants.
 @implementation Card
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UIImageView *brownCardImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cardGrayscale"]];
+        UIImageView *brownCardImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cardMarkingsRemoved"]];
         brownCardImageView.frame = self.bounds;
         [self addSubview:brownCardImageView];
     }
@@ -35,6 +37,7 @@
     [self addImage];
     [self addTitle];
     [self addAuthor];
+    [self addSummary];
 }
 
 
@@ -63,6 +66,13 @@ const float frameWidth = 3;
     grayBox.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1];
     [self addSubview:grayBox];
     [self addSubview:imageView];
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)];
+    [grayBox addGestureRecognizer:tapRecognizer];
+}
+
+- (void)imageTapped:(id)x {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:podcast.itunesPath]];
 }
 
 - (void)addTitle {
@@ -85,6 +95,18 @@ const float frameWidth = 3;
     authorLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Regular" size:12];
     authorLabel.numberOfLines = 0;
     [authorLabel sizeToFit];
+}
+
+- (void)addSummary {
+    UILabel *summaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 110, self.bounds.size.width-30, 170)];
+    [self addSubview:summaryLabel];
+    summaryLabel.numberOfLines = 0;
+    summaryLabel.text = podcast.summary;
+    summaryLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Regular" size:11];
+    [summaryLabel sizeToFit];
+    if (summaryLabel.frame.size.height > 170) {
+        summaryLabel.frame = CGRectMake(15, 110, self.bounds.size.width-30, 170);
+    }
 }
 
 @end
