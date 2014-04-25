@@ -36,10 +36,9 @@
     // Animator
     animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
-    // Tap Recognizer
-//    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
-//    [self.view addGestureRecognizer:tapRecognizer];
     srand(time(NULL));
+    
+    [self addTrays];
 }
 
 
@@ -57,7 +56,6 @@
 }
 
 - (void)addCards {
-    int i = 0;
     for (Podcast *podcast in podcasts) {
         Card *card = [[Card alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
         [card setPodcast:podcast];
@@ -70,10 +68,17 @@
         // Pan Recognizer
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(cardPanned:)];
         [card addGestureRecognizer:panRecognizer];
-//        if (i++ == 4) {
-//            break;
-//        }
     }
+}
+
+- (void)addTrays {
+    UIImageView *yesTray = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"yesBlock"]];
+    yesTray.frame = CGRectMake(265, 60, 220, 450);
+    [self.view addSubview:yesTray];
+    
+    UIImageView *noTray = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"noBlock"]];
+    noTray.frame = CGRectMake(-173, 55, 230, 470);
+    [self.view addSubview:noTray];
 }
 
 

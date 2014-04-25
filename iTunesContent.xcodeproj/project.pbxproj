@@ -30,6 +30,8 @@
 		00E3543B1909F01600B6BB70 /* cardWithLightShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E3543A1909F01600B6BB70 /* cardWithLightShadow.png */; };
 		00E3543D1909F0E900B6BB70 /* cardGrayscale.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E3543C1909F0E900B6BB70 /* cardGrayscale.png */; };
 		00E3543F190A1BF600B6BB70 /* cardMarkingsRemoved.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E3543E190A1BF600B6BB70 /* cardMarkingsRemoved.png */; };
+		00E35441190A207B00B6BB70 /* yesBlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E35440190A207B00B6BB70 /* yesBlock.png */; };
+		00E35443190A233400B6BB70 /* noBlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E35442190A233400B6BB70 /* noBlock.png */; };
 		0E221487C6084B4E87A3E80B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BB137AC9EF4F098CD7B7B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		00E3543A1909F01600B6BB70 /* cardWithLightShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardWithLightShadow.png; sourceTree = "<group>"; };
 		00E3543C1909F0E900B6BB70 /* cardGrayscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardGrayscale.png; sourceTree = "<group>"; };
 		00E3543E190A1BF600B6BB70 /* cardMarkingsRemoved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardMarkingsRemoved.png; sourceTree = "<group>"; };
+		00E35440190A207B00B6BB70 /* yesBlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yesBlock.png; sourceTree = "<group>"; };
+		00E35442190A233400B6BB70 /* noBlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noBlock.png; sourceTree = "<group>"; };
 		11BB137AC9EF4F098CD7B7B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = CocoaPods/Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +277,8 @@
 		00E354331909EB7000B6BB70 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				00E35442190A233400B6BB70 /* noBlock.png */,
+				00E35440190A207B00B6BB70 /* yesBlock.png */,
 				00E3543E190A1BF600B6BB70 /* cardMarkingsRemoved.png */,
 				00E3543C1909F0E900B6BB70 /* cardGrayscale.png */,
 				00E3543A1909F01600B6BB70 /* cardWithLightShadow.png */,
@@ -365,6 +371,8 @@
 				00E3543F190A1BF600B6BB70 /* cardMarkingsRemoved.png in Resources */,
 				00E3543B1909F01600B6BB70 /* cardWithLightShadow.png in Resources */,
 				0010E2731907510200C020AA /* Images.xcassets in Resources */,
+				00E35441190A207B00B6BB70 /* yesBlock.png in Resources */,
+				00E35443190A233400B6BB70 /* noBlock.png in Resources */,
 				00E354361909EB7000B6BB70 /* brownCard.png in Resources */,
 				00E3543D1909F0E900B6BB70 /* cardGrayscale.png in Resources */,
 				00E354391909EE9A00B6BB70 /* cardWithBorder.png in Resources */,
