@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Podcast;
+
 @interface Card : UIView
+
+- (void)setPodcast:(Podcast *)podcast;
 
 @end

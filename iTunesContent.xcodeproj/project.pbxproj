@@ -23,8 +23,12 @@
 		00E3541F19089F8D00B6BB70 /* PodcastsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */; };
 		00E354241908AC5900B6BB70 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354231908AC5900B6BB70 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		00E3542A1908C71500B6BB70 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354291908C71500B6BB70 /* Podcast.m */; };
-		00E3542C1908C9C100B6BB70 /* SampleResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00E3542B1908C9C100B6BB70 /* SampleResponse.txt */; };
 		00E354301909658E00B6BB70 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3542F1909658E00B6BB70 /* Card.m */; };
+		00E354361909EB7000B6BB70 /* brownCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E354341909EB7000B6BB70 /* brownCard.png */; };
+		00E354371909EB7000B6BB70 /* SampleResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00E354351909EB7000B6BB70 /* SampleResponse.txt */; };
+		00E354391909EE9A00B6BB70 /* cardWithBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E354381909EE9A00B6BB70 /* cardWithBorder.png */; };
+		00E3543B1909F01600B6BB70 /* cardWithLightShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E3543A1909F01600B6BB70 /* cardWithLightShadow.png */; };
+		00E3543D1909F0E900B6BB70 /* cardGrayscale.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E3543C1909F0E900B6BB70 /* cardGrayscale.png */; };
 		0E221487C6084B4E87A3E80B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BB137AC9EF4F098CD7B7B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,9 +68,13 @@
 		00E354231908AC5900B6BB70 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		00E354281908C71500B6BB70 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Podcast.h; path = SourceCode/Podcast.h; sourceTree = "<group>"; };
 		00E354291908C71500B6BB70 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Podcast.m; path = SourceCode/Podcast.m; sourceTree = "<group>"; };
-		00E3542B1908C9C100B6BB70 /* SampleResponse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SampleResponse.txt; sourceTree = "<group>"; };
 		00E3542E1909658E00B6BB70 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = SourceCode/Card.h; sourceTree = "<group>"; };
 		00E3542F1909658E00B6BB70 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = SourceCode/Card.m; sourceTree = "<group>"; };
+		00E354341909EB7000B6BB70 /* brownCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brownCard.png; sourceTree = "<group>"; };
+		00E354351909EB7000B6BB70 /* SampleResponse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SampleResponse.txt; sourceTree = "<group>"; };
+		00E354381909EE9A00B6BB70 /* cardWithBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardWithBorder.png; sourceTree = "<group>"; };
+		00E3543A1909F01600B6BB70 /* cardWithLightShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardWithLightShadow.png; sourceTree = "<group>"; };
+		00E3543C1909F0E900B6BB70 /* cardGrayscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardGrayscale.png; sourceTree = "<group>"; };
 		11BB137AC9EF4F098CD7B7B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F3368600CB4377B4DE23B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = CocoaPods/Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +139,7 @@
 		0010E2661907510200C020AA /* iTunesContent */ = {
 			isa = PBXGroup;
 			children = (
-				00E3542D1908CD9100B6BB70 /* Resources */,
+				00E354331909EB7000B6BB70 /* Resources */,
 				00E354201908AC5900B6BB70 /* Utilities */,
 				00E3541919089F3900B6BB70 /* MVC */,
 				0010E2671907510200C020AA /* Supporting Files */,
@@ -242,14 +250,6 @@
 			path = XMLReader;
 			sourceTree = "<group>";
 		};
-		00E3542D1908CD9100B6BB70 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				00E3542B1908C9C100B6BB70 /* SampleResponse.txt */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		00E35431190965AA00B6BB70 /* PodcastListVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +266,18 @@
 				00E3542F1909658E00B6BB70 /* Card.m */,
 			);
 			name = Card;
+			sourceTree = "<group>";
+		};
+		00E354331909EB7000B6BB70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00E3543C1909F0E900B6BB70 /* cardGrayscale.png */,
+				00E3543A1909F01600B6BB70 /* cardWithLightShadow.png */,
+				00E354381909EE9A00B6BB70 /* cardWithBorder.png */,
+				00E354341909EB7000B6BB70 /* brownCard.png */,
+				00E354351909EB7000B6BB70 /* SampleResponse.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,8 +358,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0010E26B1907510200C020AA /* InfoPlist.strings in Resources */,
-				00E3542C1908C9C100B6BB70 /* SampleResponse.txt in Resources */,
+				00E354371909EB7000B6BB70 /* SampleResponse.txt in Resources */,
+				00E3543B1909F01600B6BB70 /* cardWithLightShadow.png in Resources */,
 				0010E2731907510200C020AA /* Images.xcassets in Resources */,
+				00E354361909EB7000B6BB70 /* brownCard.png in Resources */,
+				00E3543D1909F0E900B6BB70 /* cardGrayscale.png in Resources */,
+				00E354391909EE9A00B6BB70 /* cardWithBorder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

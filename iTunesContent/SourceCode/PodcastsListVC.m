@@ -32,7 +32,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self loadPodcasts];
-    [self addCards];
     
     // Animator
     animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
@@ -51,14 +50,17 @@
     [[server getTopPodcasts]
      subscribeNext:^(NSArray *somePodcasts) {
          podcasts = somePodcasts;
+         [self addCards];
      } error:^(NSError *error) {
          // TODO: handle error
      }];
 }
 
 - (void)addCards {
-    for (int i = 0; i < 10; i++) {
+    int i = 0;
+    for (Podcast *podcast in podcasts) {
         Card *card = [[Card alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
+        [card setPodcast:podcast];
         CGPoint rootPoint = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
         CGPoint randomOffset = [self randomOffset];
         card.center = CGPointMake(rootPoint.x+randomOffset.x, rootPoint.y+randomOffset.y);
@@ -68,6 +70,9 @@
         // Pan Recognizer
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(cardPanned:)];
         [card addGestureRecognizer:panRecognizer];
+//        if (i++ == 4) {
+//            break;
+//        }
     }
 }
 

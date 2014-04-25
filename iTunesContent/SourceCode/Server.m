@@ -37,34 +37,34 @@
 
 #pragma mark - Public API
 
-//- (RACSignal *)getTopPodcasts {
-//    RACSubject *subject = [RACSubject subject];
-//    [requestOperationManager GET:topTechPodcastsURL
-//                      parameters:nil
-//                         success:^(AFHTTPRequestOperation *operation, NSXMLParser *xmlParser) {
-//                             NSDictionary *dict = [XMLReader dictionaryForXMLString:operation.responseString error:nil];
-//                             NSArray *podcasts = [self parseDict:dict];
-//                             [subject sendNext:podcasts];
-//                         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//                             [subject sendError:error];
-//                         }];
-//    return subject;
-//}
-
 - (RACSignal *)getTopPodcasts {
     RACSubject *subject = [RACSubject subject];
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SampleResponse" ofType:@"txt"];
-    NSString *string = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSDictionary *dict = [XMLReader dictionaryForXMLString:string error:nil];
-    NSArray *podcasts = [self parseDict:dict];
-    
-    dispatch_after(0, dispatch_get_main_queue(), ^{
-        [subject sendNext:podcasts];
-    });
-    
+    [requestOperationManager GET:topTechPodcastsURL
+                      parameters:nil
+                         success:^(AFHTTPRequestOperation *operation, NSXMLParser *xmlParser) {
+                             NSDictionary *dict = [XMLReader dictionaryForXMLString:operation.responseString error:nil];
+                             NSArray *podcasts = [self parseDict:dict];
+                             [subject sendNext:podcasts];
+                         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                             [subject sendError:error];
+                         }];
     return subject;
 }
+
+//- (RACSignal *)getTopPodcasts {
+//    RACSubject *subject = [RACSubject subject];
+//    
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SampleResponse" ofType:@"txt"];
+//    NSString *string = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+//    NSDictionary *dict = [XMLReader dictionaryForXMLString:string error:nil];
+//    NSArray *podcasts = [self parseDict:dict];
+//    
+//    dispatch_after(0, dispatch_get_main_queue(), ^{
+//        [subject sendNext:podcasts];
+//    });
+//    
+//    return subject;
+//}
 
 // TODO: Extract strings to a constants file
 - (NSArray *)parseDict:(NSDictionary *)dict {
