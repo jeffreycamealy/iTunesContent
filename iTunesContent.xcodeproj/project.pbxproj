@@ -22,7 +22,6 @@
 		00E3541619089A1B00B6BB70 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541519089A1B00B6BB70 /* Server.m */; };
 		00E3541F19089F8D00B6BB70 /* PodcastsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */; };
 		00E354241908AC5900B6BB70 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354231908AC5900B6BB70 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		00E354271908C43900B6BB70 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354261908C43900B6BB70 /* Entry.m */; };
 		00E3542A1908C71500B6BB70 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E354291908C71500B6BB70 /* Podcast.m */; };
 		00E3542C1908C9C100B6BB70 /* SampleResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00E3542B1908C9C100B6BB70 /* SampleResponse.txt */; };
 		00E354301909658E00B6BB70 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3542F1909658E00B6BB70 /* Card.m */; };
@@ -63,8 +62,6 @@
 		00E3541E19089F8D00B6BB70 /* PodcastsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PodcastsListVC.m; path = SourceCode/PodcastsListVC.m; sourceTree = "<group>"; };
 		00E354221908AC5900B6BB70 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		00E354231908AC5900B6BB70 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
-		00E354251908C43900B6BB70 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entry.h; path = SourceCode/Entry.h; sourceTree = "<group>"; };
-		00E354261908C43900B6BB70 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entry.m; path = SourceCode/Entry.m; sourceTree = "<group>"; };
 		00E354281908C71500B6BB70 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Podcast.h; path = SourceCode/Podcast.h; sourceTree = "<group>"; };
 		00E354291908C71500B6BB70 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Podcast.m; path = SourceCode/Podcast.m; sourceTree = "<group>"; };
 		00E3542B1908C9C100B6BB70 /* SampleResponse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SampleResponse.txt; sourceTree = "<group>"; };
@@ -204,8 +201,6 @@
 		00E3541A19089F3E00B6BB70 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				00E354251908C43900B6BB70 /* Entry.h */,
-				00E354261908C43900B6BB70 /* Entry.m */,
 				00E354281908C71500B6BB70 /* Podcast.h */,
 				00E354291908C71500B6BB70 /* Podcast.m */,
 			);
@@ -404,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E354271908C43900B6BB70 /* Entry.m in Sources */,
 				0010E2711907510200C020AA /* AppDelegate.m in Sources */,
 				00E3542A1908C71500B6BB70 /* Podcast.m in Sources */,
 				00E354301909658E00B6BB70 /* Card.m in Sources */,

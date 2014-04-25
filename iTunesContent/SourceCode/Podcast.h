@@ -13,5 +13,7 @@
 @property NSString *imagePath;
 @property NSString *itunesPath;
 @property NSString *title;
+@property NSString *author;
+@property NSString *summary;
 
 @end

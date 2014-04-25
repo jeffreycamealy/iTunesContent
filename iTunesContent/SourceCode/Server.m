@@ -76,7 +76,12 @@
         
         podcast.imagePath = [self cleanString:podcastDict[@"im:image"][2][@"text"]];
         podcast.itunesPath = [self cleanString:podcastDict[@"id"][@"text"]];
-        podcast.title = [self cleanString:podcastDict[@"title"][@"text"]];
+        podcast.summary = [self cleanString:podcastDict[@"summary"][@"text"]];
+        
+        NSString *fullTitle = [self cleanString:podcastDict[@"title"][@"text"]];
+        NSArray *components = [fullTitle componentsSeparatedByString:@" - "];
+        podcast.title = components[0];
+        podcast.author = components[1];
     }
     
     return podcasts;
